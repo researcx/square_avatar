@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Free square avatars</title>
+	<title>Free Square Avatar [ /!\ WINNER!!! /!\ ]</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="square avatar generator" />
     <meta property="og:description" content="just right-click save it! it's free!" />
@@ -10,13 +10,15 @@
 
     <style>
         body {
-            background-color: #492d2e;
+            background-color: #ffffff;
+			color: #000000;
+			font-family: consolas, monospace, sans-serif;
         }
         h1 {
-            font-family: 'consolas', monospace;
+            font-family: consolas, monospace, sans-serif;
         }
         h2 {
-            font-family: 'consolas', monospace;
+            font-family: consolas, monospace, sans-serif;
         }
         .box {
             display: block;
@@ -30,17 +32,10 @@
             display: inline-block;
             padding: 5px;
         }
-        .rainbow-text {
-            font-family: consolas, monospace, sans-serif;
-            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-        }
     </style>
 </head>
 <body>
+	<p style="margin-bottom: -150px;"><a href="https://github.com/researcx/square_avatar" target="_blank"><img src="contact.gif" /></a></p>
     <div class="box">
         <h1>square avatar generator</h1>
         <h2>just right-click save it! it's free!</h2>
@@ -49,6 +44,7 @@
         </p>
         <input type="file" id="rawfile">
         <p>(Just click on the image to download, since phones don't have right click. Use Twitter web to upload so it stays transparent.)</p>
+		<p><img src="fire_under_construction.gif" /></p>
     </div>
 </body>
 <script type="text/javascript">
@@ -82,8 +78,9 @@
                     img.onload = () => {
                         context.drawImage(mask, 0, 0, 400, 400);
                         context.globalCompositeOperation = 'source-out';
+						
                         var scale = ScaleImage(img.width, img.height, 400, 400, false);
-                        context.drawImage(img, scale.targetleft, scale.targettop, scale.width, scale.height);
+                        context.drawImage(img, scale.targetleft + 50, scale.targettop + 50, scale.width - 100, scale.height - 100);
                     }
                 }
             }
