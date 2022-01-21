@@ -49,7 +49,6 @@
         </p>
         <input type="file" id="rawfile">
         <p>(Just click on the image to download, since phones don't have right click. Use Twitter web to upload so it stays transparent.)</p>
-        <p><div class="fit-content"><h2 class="rainbow-text">circle and hexbros get dunked on</h2></div></p>
     </div>
 </body>
 <script type="text/javascript">
@@ -60,12 +59,12 @@
     var fileinput = document.getElementById('rawfile'); // input file
     var img = new Image();
     var mask = new Image()
-    mask.src = 'hexagon.png';
+    mask.src = 'square.png';
 
     canvas.onclick = () => {
         download_image = canvas.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
         var dl_link = document.createElement('a');
-        dl_link.download = "hex-avatar.png";
+        dl_link.download = "square-avatar.png";
         dl_link.href = download_image;
         dl_link.click();
     }
