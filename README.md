@@ -2,13 +2,13 @@
 
 forked from https://github.com/noiob/noiob.github.io
 
-hexagon avatar maker: https://noiob.github.io/hexagon.html
+free hexagonal avatars: https://noiob.github.io/hexagon.html
 
 ```
                                  ,-
-                               ,'::|
-                              /::::|
-                            ,'::::o\                                      _..
+   ?????????????               ,'::|
+     ????????                 /::::|
+          \                  ,'::::o\                                      _..
          ____........-------,..::?88b                                  ,-' /
  _.--"""". . . .      .   .  .  .  ""`-._                           ,-' .;'
 <. - :::::o......  ...   . . .. . .  .  .""--._                  ,-'. .;'
